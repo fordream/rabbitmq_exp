@@ -1,1 +1,3 @@
 # rabbitmq_work_queue
+多个receiver的时候，只有一个receiver获取到了message，其他receiver都处于空闲状态
+多个receiver是在同一个进程中启动的，分别占用一个线程
